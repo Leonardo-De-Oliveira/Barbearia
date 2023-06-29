@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Parlour Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.banner {
+    background-image: url('assets/banner.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.container-banner{
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255, 166, 0, 0) 20%,rgba(100, 100, 100, 0.212) 30%, rgba(0, 0, 0, 0.76));
+}
+.container-banner h1 {
+    text-align: center;
+    color: #f0f8ff;
+    font-size: 98px;
+    font-weight: 500;
+    margin-top: 180px;
+}
+.navbar {
+    background-color: #ffffffd7;
+    height: 60px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.navbar a {
+    color: #000000;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+.logo{
+    width: 50px;
+}
+
+
+
+.atendimento {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+.atendimento img{
+    width: 200px;
+    height: 300px;
+    margin: 0 10px;
+}
+.atendimento p {
+    width: 220px;
+    text-align: center;
+    margin: 0 40px 0 0;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.atendimento td {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+.horario {
+    display: flex;
+}
+table {
+    font-size: 38px;
+}
+.container-servicos {
+    width: 100%;
+    max-width: 1024px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.servicos h2 {
+    font-size: 32px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin: 50px auto;
+    width: 200px;
+    color: #f0f8ff;
+    border-radius: 10px;
+    background-color: #8b4513;
+}
+.card{
+    text-align: center;
+    margin: 40px 30px;
+}
+.card img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    box-shadow: 10px 10px 10px #7c7c7c6c;
+}
+.card h3 {
+    font-size: 32px;
+    margin: 10px 0;
+    border-bottom: 2px solid #8b4513;
+}   
+.card p {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+
+
+.banner-2 {
+    background-image: url('assets/banner-pomada.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-2 h2 {
+    font-size: 78px;
+    color: #f0f8ff;
+    font-family: 'Parlour Sans', sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+
+
+.produtos {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-produto{
+    width: 350px;
+    margin: 60px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-produto h3 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+.card-produto p {
+    font-size: 20px;
+}
+.card-produto img {
+    width: 200px;
+}
+.balm img {
+    width: 200px;
+    height: 250px;
+}
+.oleo img{
+    width: 50px;
+    height: 150px;
+}
+
+
+
+.contato{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    min-width: 320px;
+}
+
+.box-2 {
+    text-align: center;
+    width: 50%;
+    padding: 40px;
+    min-width: 320px;
+}
+.box-2 span {
+    color: #f0f8ff;
+    font-weight: 100;
+    background-color: #8b4513;
+    margin-bottom: 30px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 28px;
+    padding: 2px;
+}
+.box-2 a {
+    text-decoration: none;
+}
+
+.box-2 img {
+    width: 30px;
+    margin: 15px 5px;
+}
+.box-2 p {
+    font-size: 20px;
+}
+.rodape {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 82px;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #f0f8ff;
+}
+.rodape a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f8ff;
+    border-bottom: 1px solid #f0f8ff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .atendimento img {
+        display: none;
+    }
+    .atendimento p {
+        margin: 50px 0;
+    }
+    .atendimento {
+        flex-direction: column;
+    }
+    .navbar {
+        height: 200px;
+    }
+    .navbar img {
+        margin: 0 10px;
+    }
+    .banner {
+        background-position: right;
+    }
+    .banner-2 {
+        background-image: url('assets/banner-pomada2.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
