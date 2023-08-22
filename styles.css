@@ -1,12 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Parlour Sans', sans-serif;
+    font-family:'TRIAL Riegraf', sans-serif;
     box-sizing: border-box;
 }
-
-
-
 .banner {
     background-image: url('assets/banner.png');
     background-attachment: fixed;
@@ -20,14 +17,17 @@
     width: 100%;
     height: 100%;
     background-image: radial-gradient(rgba(255, 166, 0, 0) 20%,rgba(100, 100, 100, 0.212) 30%, rgba(0, 0, 0, 0.76));
-}
+}  
 .container-banner h1 {
+    text-transform: uppercase;
+    text-shadow: 5px 1px #000000;
     text-align: center;
     color: #f0f8ff;
-    font-size: 98px;
+    font-size: 78px;
     font-weight: 500;
-    margin-top: 180px;
+    margin-top: 180px;	
 }
+
 .navbar {
     background-color: #ffffffd7;
     height: 60px;
@@ -43,7 +43,6 @@
 .navbar a {
     color: #000000;
     margin: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     text-decoration: none;
@@ -51,8 +50,6 @@
 .logo{
     width: 50px;
 }
-
-
 
 .atendimento {
     width: 100%;
@@ -74,11 +71,40 @@
     text-align: center;
     margin: 0 40px 0 0;
     line-height: 30px;
-    font-size: 30px;
+    font-size: 22px;
+    -webkit-animation: scale-up-hor-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+@-webkit-keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  @keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
 
 .atendimento td {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
     margin-bottom: 18px;
     font-size: 18px;
@@ -87,7 +113,7 @@
     display: flex;
 }
 table {
-    font-size: 38px;
+    font-size: 28px;
 }
 .container-servicos {
     width: 100%;
@@ -99,7 +125,7 @@ table {
     flex-wrap: wrap;
 }
 .servicos h2 {
-    font-size: 32px;
+    font-size: 28px;
     font-family: sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -112,7 +138,7 @@ table {
 }
 .card{
     text-align: center;
-    margin: 40px 30px;
+    margin: 40px 40px;
 }
 .card img{
     width: 180px;
@@ -126,7 +152,7 @@ table {
     border-bottom: 2px solid #8b4513;
 }   
 .card p {
-    font-size: 25px;
+    font-size: 26px;
     letter-spacing: 1px;
 }
 
@@ -145,9 +171,9 @@ table {
     justify-content: center;
 }
 .banner-2 h2 {
-    font-size: 78px;
+    text-transform: uppercase;
+    font-size: 68px;
     color: #f0f8ff;
-    font-family: 'Parlour Sans', sans-serif;
     letter-spacing: 5px;
     text-shadow: 5px 5px 5px #000000;
 }
@@ -175,18 +201,20 @@ table {
     margin: 10px 0;
 }
 .card-produto p {
-    font-size: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 .card-produto img {
     width: 200px;
 }
-.balm img {
-    width: 200px;
-    height: 250px;
+.pomada img {
+    width: 250px;
+    border-radius: 125px;
 }
+
 .oleo img{
-    width: 50px;
-    height: 150px;
+    width: 110px;
+    height: 280px;
 }
 
 
@@ -244,7 +272,6 @@ iframe {
 }
 .rodape {
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 82px;
     text-align: center;
     padding: 20px;
@@ -252,7 +279,6 @@ iframe {
     color: #f0f8ff;
 }
 .rodape a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f0f8ff;
     border-bottom: 1px solid #f0f8ff;
     font-weight: 700;
