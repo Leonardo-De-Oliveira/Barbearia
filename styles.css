@@ -3,6 +3,7 @@
     padding: 0;
     font-family:'TRIAL Riegraf', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .banner {
     background-image: url('assets/banner.png');
@@ -25,9 +26,34 @@
     color: #f0f8ff;
     font-size: 78px;
     font-weight: 500;
-    margin-top: 180px;	
+    margin-top: 180px;
+	-webkit-animation: slide-in-fwd-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-fwd-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;	
 }
-
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
 .navbar {
     background-color: #ffffffd7;
     height: 60px;
@@ -71,39 +97,8 @@
     text-align: center;
     margin: 0 40px 0 0;
     line-height: 30px;
-    font-size: 22px;
-    -webkit-animation: scale-up-hor-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-hor-left 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-@-webkit-keyframes scale-up-hor-left {
-    0% {
-      -webkit-transform: scaleX(0.4);
-              transform: scaleX(0.4);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-  }
-  @keyframes scale-up-hor-left {
-    0% {
-      -webkit-transform: scaleX(0.4);
-              transform: scaleX(0.4);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-  }
-
+    font-size: 22px;	        
+}  
 .atendimento td {
     text-align: left;
     margin-bottom: 18px;
@@ -139,7 +134,7 @@ table {
 .card{
     text-align: center;
     margin: 40px 40px;
-}
+}  
 .card img{
     width: 180px;
     height: 180px;
@@ -194,8 +189,7 @@ table {
     margin: 60px;
     text-align: center;
     padding: 10px;
-}
-
+}  
 .card-produto h3 {
     font-size: 26px;
     margin: 10px 0;
@@ -286,6 +280,9 @@ iframe {
 }
 
 @media (max-width: 500px) {
+    .container-banner h1 {
+        font-size: 58px;
+    }
     .atendimento img {
         display: none;
     }
@@ -315,5 +312,8 @@ iframe {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .banner-2 h2 {
+        font-size: 48px;
     }
 }
