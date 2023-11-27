@@ -20,15 +20,15 @@
     background-image: radial-gradient(rgba(255, 166, 0, 0) 20%,rgba(100, 100, 100, 0.212) 30%, rgba(0, 0, 0, 0.76));
 }  
 .container-banner h1 {
-    text-transform: uppercase;
+
     text-shadow: 5px 1px #000000;
     text-align: center;
     color: #f0f8ff;
-    font-size: 78px;
+    font-size: 98px;
     font-weight: 500;
     margin-top: 180px;
-	-webkit-animation: slide-in-fwd-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-in-fwd-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;	
+	-webkit-animation: slide-in-fwd-center 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-fwd-center 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;	
 }
 @-webkit-keyframes slide-in-fwd-center {
     0% {
@@ -56,11 +56,10 @@
   }
 .navbar {
     background-color: #ffffffd7;
-    height: 60px;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    border-radius: 25px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -68,10 +67,13 @@
 }
 .navbar a {
     color: #000000;
-    margin: 10px;
+    margin: 15px;
     text-transform: uppercase;
     font-weight: 500;
     text-decoration: none;
+}
+.navbar span {
+    margin-left: 5px;
 }
 .logo{
     width: 50px;
@@ -89,26 +91,50 @@
 }
 .atendimento img{
     width: 200px;
-    height: 300px;
-    margin: 0 10px;
+    height: 350px;
+    margin: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #7c7c7c6c;
 }
-.atendimento p {
+.paragrafo {
     width: 220px;
     text-align: center;
     margin: 0 40px 0 0;
     line-height: 30px;
     font-size: 22px;	        
 }  
-.atendimento td {
+
+.table {
+    font-size: 28px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.table div {
+    display: flex;
+}
+.table-descricao {
+    margin: 0 30px;
+    text-align: left;
+}
+
+.table-descricao p {
+    width: 115px;
+}
+.table-descricao:first-child p {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.horario p {
     text-align: left;
     margin-bottom: 18px;
     font-size: 18px;
 }
 .horario {
     display: flex;
-}
-table {
-    font-size: 28px;
 }
 .container-servicos {
     width: 100%;
@@ -125,7 +151,7 @@ table {
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    margin: 50px auto;
+    margin: 250px auto 150px auto;
     width: 200px;
     color: #f0f8ff;
     border-radius: 10px;
@@ -136,9 +162,9 @@ table {
     margin: 40px 40px;
 }  
 .card img{
-    width: 180px;
-    height: 180px;
-    border-radius: 100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
     box-shadow: 10px 10px 10px #7c7c7c6c;
 }
 .card h3 {
@@ -257,9 +283,9 @@ iframe {
     text-decoration: none;
 }
 
-.box-2 img {
-    width: 30px;
-    margin: 15px 5px;
+.box-2 i {
+    margin: 30px 10px;
+    color: #000;
 }
 .box-2 p {
     font-size: 20px;
@@ -279,21 +305,40 @@ iframe {
     text-decoration: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 530px) {
     .container-banner h1 {
-        font-size: 58px;
+        font-size: 78px;
+        margin-top: 300px;
+    }
+    .table {
+        margin: 100px 0;
     }
     .atendimento img {
         display: none;
     }
-    .atendimento p {
+    .servicos h2 {
+        margin: 150px auto;
+    }
+    .paragrafo {
         margin: 50px 0;
     }
     .atendimento {
         flex-direction: column;
     }
     .navbar {
-        height: 200px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        background-color: #fff;
+    }
+    .navbar i {
+        display: block;
+    }
+    .navbar span {
+        display: none;
     }
     .navbar img {
         margin: 0 10px;
