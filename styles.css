@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 .banner {
-    background-image: url('assets/banner.png');
+    background-image: url('assets/banners/banner.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,8 +162,8 @@
     margin: 40px 40px;
 }  
 .card img{
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     border-radius: 125px;
     box-shadow: 10px 10px 10px #7c7c7c6c;
 }
@@ -180,7 +180,7 @@
 
 
 .banner-2 {
-    background-image: url('assets/banner-pomada.jpg');
+    background-image: url('assets/banners/banner-pomada.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -347,7 +347,7 @@ iframe {
         background-position: right;
     }
     .banner-2 {
-        background-image: url('assets/banner-pomada2.jpg');
+        background-image: url('assets/banners/banner-pomada2.jpg');
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
